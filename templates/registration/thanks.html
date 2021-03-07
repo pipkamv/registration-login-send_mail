@@ -1,8 +1,6 @@
-{% extends 'base.html' %}
-{% load bootstrap3 %}
+{% extends 'index.html' %}
 
-{% block contactform %}
-
+{% block content %}
  <div class="panel panel-success">
   <div class="panel-heading">
     <h2 class="panel-title"></h2>
@@ -10,10 +8,9 @@
   <div class="panel-body">
 <div class="well well-lg" align="center">
     <h3>Спасибо, Ваше сообщение отправлено!</h3>
-    <div align="center"><a href="/"><button type="button" class="btn btn-info">Вернутся на главную</button></a></div>
+    <div align="center"><a href="{% url 'shop:home'%}"><button type="button" class="btn btn-info">Вернутся на главную</button></a></div>
   </div>
 </div>
 </div>
 {% endblock %}
-
 

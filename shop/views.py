@@ -22,13 +22,13 @@ def contactform(reguest):
             message = form.cleaned_data['message']
             copy = form.cleaned_data['copy']
 
-            recepients = ['kanapmbm@gmail.com']
+            recepients = ['mnkvk@mail.ru']
 
 
             if copy:
                 recepients.append(sender)
             try:
-                send_mail(subject, message, 'kanapmbm@mgmail.com', recepients)
+                send_mail(subject, message, 'mnkvk@mail.ru', recepients)
             except BadHeaderError:
                 return HttpResponse('Допущен недопустимый заголовок')
 
@@ -43,3 +43,7 @@ def contactform(reguest):
 def thanks(reguest):
     thanks = 'thanks'
     return render(reguest, 'registration/thanks.html', {'thanks':thanks})
+
+
+
+

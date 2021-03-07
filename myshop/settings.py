@@ -131,8 +131,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_HOST_USER = 'mnkvk@mail.ru'
-EMAIL_HOST_PASSWORD = '###'
+EMAIL_HOST_PASSWORD = '181203kana7355608'
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = 'mnkvk@mail.ru'
+DEFAULT_FROM_EMAIL = 'freedomkana@mail.ru'
 
